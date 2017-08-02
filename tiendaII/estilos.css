@@ -1,0 +1,1089 @@
+/********************************************Cuerpo********************************************/
+
+html,body {
+    background-color: white;
+	height: 100%;
+	padding: 0px;
+	margin-top:0px;
+	margin-right: 0px;
+	margin-bottom:0px;
+	margin-left: 0px;
+	background: #CECBD2; 
+}
+
+/*Tamaño de la página*/
+.contenedor{
+	margin:auto;
+	width:1080px;
+}
+
+/************************************PUBLICIDAD************************************/
+
+/*Publicidad de la parte izquierda*/
+.publizquierda{
+	width:130px;
+	height:500px;
+	float:left;
+	background-image:url(images/bannerizq.jpg); /* Le metemos por aqui la ruta con la imagen */
+	margin-right:10px; /*Se ajustan los margenes*/
+}
+
+/*Publicidad de la parte derecha*/
+.publiderecha{
+	width:130px;
+	height:500px;
+	float:right;
+	background-image:url(images/bannerizq.jpg); /* Le metemos por aqui la ruta con la imagen */
+	margin-left:1px; /*Ajustamos los margenes*/
+}
+
+/*Publicidad de la parte central*/
+.publicentral{
+	width:808px;
+	height:125px;
+	background-image:url(images/bannersuperior.jpg); /* Le metemos por aqui la ruta con la imagen */
+}
+/***************************************Parte central de la página***************************************/
+
+/*Parte central de la página incluyendo publicidad*/
+.central{
+	margin-left:135px;
+}
+
+/*Parte central de la página sin incluir la publicidad*/
+.contenedorCentral{
+	width:800px;
+	margin-top:6px;
+	overflow:hidden;
+	-webkit-box-shadow: 0 0 5px 5px#7A7C84; /* Le metemos un bordeado */
+}
+
+/**********************************Titulo**********************************/
+
+.rojo{
+	font-family: Georgia, Times, 'Times New Roman', serif;
+	font-size: 50px;
+	text-decoration:none;
+	text-shadow: 1px 1px #CCC;
+	text-align:center;
+	color:#b10c0d;
+}
+
+/*****************************************Secciones*****************************************/
+
+.secciones{
+	text-decoration:none;
+	background-color: #7A7C84;
+	min-height:25px;
+    text-align:center;
+}
+
+.secciones a{
+	display:inline;
+	float:left;
+	margin-left:7px;
+	font-weight:bold;
+	font-size:12px;
+	color:#D7F705;
+	padding-top:6px;
+	text-decoration:none;
+	margin: 1px 1px 1px 20px;
+}
+.secciones a:hover{
+	text-shadow: 0px 0px 15px white; /*Sombreado cuando pasamos el raton por encima*/
+}
+
+/***********************Barra que aparece en las secciones***********************/
+
+.barramenu {
+	width:8px;
+	height:25px;
+	padding-left:15px;
+	padding-right:0px;
+	display:inline;
+	float:left;
+}
+
+/********************************Productos********************************/
+
+.productos{
+	width:100%;
+	margin:auto;
+	padding:0;
+	display:table; /*Creamos tabla donde van a ir todos los productos, asi nos ahorramos un table en cada html*/
+	overflow:hidden;
+	background: white;
+}
+
+.productos h1{
+	color: #002e49;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.productos p{
+	font-size:12px;
+	text-align:left;
+	padding:0.5em;
+}
+
+.productos img{
+	margin-left:0.5px;
+	margin-bottom:5px;
+}
+
+.fila {
+	display: table-row;/* Para crear columnas */
+}
+
+.fila h1{
+	font-size:25px;
+}
+
+/**********************Productos en funcion de columnas**********************/
+
+.izquierda{
+	width:300px;
+	padding:0.2em;
+	display: table-cell;
+}
+
+.centro{
+	width:200px;
+	padding:0.2em;
+	display: table-cell;
+}
+
+.derecha{
+	width:300px;
+	margin-top:1px;
+	padding:0.2em;
+	padding-top:10px;
+	display: table-cell;
+}
+
+.derecha h1{
+	color:#002e49;
+	margin-top:0px;
+	margin-bottom:0px;
+	font-size:25px;
+}
+
+/*******************************Productos de sobremesa*******************************/
+
+.sobremesa{
+	background-color:#58DC0C;
+	text-align: center;
+	border-radius: 6px;
+	margin-top:3px;
+}
+.sobremesa p{
+	color:#0B1EF2;
+}
+
+.sobremesa a{
+	font-family: Georgia, Times, 'Times New Roman', serif;
+	font-size:18px;
+	color:black;
+	margin-top:19px;
+	padding-left:3px;
+	padding-right:3px;
+	text-decoration:none;
+	text-align:left;
+}
+
+.sobremesa img{
+	width:195px;
+	margin:auto;
+}
+
+/*******************************Productos de portatiles*******************************/
+
+.portatiles{
+	background-color: #E81111;
+	border-radius: 6px;
+	text-align: center;
+	margin-top: 3px;
+}
+
+.portatiles p{
+	color: white;
+}
+
+.portatiles a{
+	font-family: Georgia, Times, 'Times New Roman', serif;
+	font-size:18px;
+	color:black;
+	margin-top:19px;
+	padding-left:3px;
+	padding-right:3px;
+	text-decoration:none;
+	text-align:left;
+}
+
+.portatiles img{
+	width:195px;
+	margin:auto;
+}
+
+/*******************************Productos de perifericos*******************************/
+
+.perifericos{
+	background-color: #0B1EF2;
+	border-radius: 6px;
+	text-align: center;
+	margin-top: 3px;
+	
+}
+
+.perifericos p{
+	color:white;
+}
+
+.perifericos a{
+	font-family: Georgia, Times, 'Times New Roman', serif;
+	font-size:18px;
+	color:black;
+	margin-top:19px;
+	padding-left:3px;
+	padding-right:3px;
+	text-decoration:none;
+	text-align:left;
+}
+
+.perifericos img{
+	width:195px;
+	margin:auto;
+}
+
+/*******************************Productos de investigaciones*******************************/
+
+.investigaciones{
+	background-color:#F706EB;
+	border-radius: 6px;
+	text-align: center;
+	margin-top:3px;
+}
+
+.investigaciones p{
+	color: white;
+}
+
+.investigaciones a{
+	font-family: Georgia, Times, 'Times New Roman', serif;
+	font-size:18px;
+	color:black;
+	margin-top:19px;
+	padding-left:3px;
+	padding-right:3px;
+	text-decoration:none;
+	text-align:left;
+}
+
+.investigaciones img{
+	width:195px;
+	margin:auto;
+}
+
+/*****************************Bloque derecha-> Ultimas noticias *****************************/
+
+.ultimasnoticias{
+	height:140px;
+	overflow-y:auto; /* Barra de desplazamiento */
+	background:white;
+	border:2px solid #e9e8e4;
+	border-radius: 6px;
+	
+}
+
+.ultimasnoticias ul{
+	margin-left:-30px;
+	margin-top:1px;
+}
+
+.ultimasnoticias li{
+	margin-bottom:7px;
+	color:#002e49;
+	text-decoration:none;
+	font-size:12px;
+}
+
+.ultimasnoticias a{
+	color:green;
+	font-size:12px;
+}
+
+/*****************************Bloque derecha-> Ultimas noticias deportivas *****************************/
+
+.ultimasnoticiasdeportivas{
+	height:90px;
+	overflow-y:auto; /* Barra de desplazamiento */
+	background:white;
+	border:2px solid #e9e8e4;
+	border-radius: 6px;	
+}
+
+.ultimasnoticiasdeportivas ul{
+	margin-left:-30px;
+	margin-top:1px;
+}
+
+.ultimasnoticiasdeportivas li{
+	margin-bottom:7px;
+	color:#002e49;
+	text-decoration:none;
+	font-size:12px;
+}
+
+.ultimasnoticiasdeportivas a{
+	color:green;
+	font-size:12px;
+}
+
+/******************************************Pie de pagina******************************************/
+
+.piepagina{
+	width:100%;
+	height:67px;
+	clear:both;
+	text-align:center;
+	background-color: #7A7C84;
+	-webkit-linear-gradient(#002e49 50%, #00395a);
+	margin: 0 0 0 0;
+    padding: 0 0 0 0;	
+}
+
+.piepagina p{
+	font-family: Georgia, Times, 'Times New Roman', serif;
+	font-size:10px;
+	display:inline;
+	color:white;
+	margin: 15px;
+}
+
+.piepagina img{
+	width:20px;
+	height: 20px;
+}
+
+.piepagina a{
+	color:white;
+}
+
+.piepagina a:link{
+	text-decoration:none;
+}
+
+/****************Nombre que parece para saber en que seccion estamos***************/
+
+.nombreseccion{
+	color:#002e49;
+	text-align:center;
+	font-size:28px;
+	margin-top:2px;
+	margin-left:10px
+	margin-bottom:2px;
+}
+
+/***********************************NOTICIAS DESTACADAS***********************************/
+
+/* PORTATILES */
+.noticiadestacadaportatiles{
+	background-color:#E81111;
+	border-radius: 6px;
+	text-align: center;
+	margin-top:3px;
+	padding:0.5em;
+	margin:3px;
+}
+
+.noticiadestacadaportatiles p{
+	color:white;
+}
+
+.noticiadestacadaportatiles a{
+	font-family: Georgia, Times, 'Times New Roman', serif;
+	font-size:18px;
+	color:black;
+	margin-top:19px;
+	padding-left:3px;
+	padding-right:3px;
+	text-decoration:none;
+	text-align:left;
+}
+
+.noticiadestacadaportatiles img{
+	width:500px;
+	display:block;
+	margin:auto;
+}
+
+/* PERIFERICOS */
+
+.noticiadestacadaperifericos{
+	background-color:#0B1EF2;
+	border-radius: 6px;
+	text-align: center;
+	margin-top:3px;
+	padding:0.5em;
+	margin:3px;
+}
+
+.noticiadestacadaperifericos p{
+	color:white;
+}
+
+.noticiadestacadaperifericos a{
+	font-family: Georgia, Times, 'Times New Roman', serif;
+	font-size:18px;
+	color:black;
+	margin-top:19px;
+	padding-left:3px;
+	padding-right:3px;
+	text-decoration:none;
+	text-align:left;
+}
+
+.noticiadestacadaperifericos img{
+	width:500px;
+	display:block;
+	margin:auto;
+}
+
+/* SOBREMESA */
+
+.noticiadestacadasobremesa{
+	background-color:#58DC0C;
+	border-radius: 6px;
+	text-align: center;
+	margin-top:3px;
+	padding:0.5em;
+	margin:3px;
+}
+
+.noticiadestacadasobremesa p{
+	color:#0B1EF2;
+}
+
+
+.noticiadestacadasobremesa a{
+	font-family: Georgia, Times, 'Times New Roman', serif;
+	font-size:18px;
+	color:black;
+	margin-top:19px;
+	padding-left:3px;
+	padding-right:3px;
+	text-decoration:none;
+	text-align:left;
+}
+
+.noticiadestacadasobremesa img{
+	width:500px;
+	display:block;
+	margin:auto;
+}
+
+/*INVESTIGACION*/
+
+.noticiadestacadainvestigacion{
+	background-color:#F706EB;
+	border-radius: 6px;
+	text-align: center;
+	margin-top:3px;
+	padding:0.5em;
+	margin:3px;
+}
+
+.noticiadestacadainvestigacion p{
+	color:white;
+}
+
+
+.noticiadestacadainvestigacion a{
+	font-family: Georgia, Times, 'Times New Roman', serif;
+	font-size:18px;
+	color:black;
+	margin-top:19px;
+	padding-left:3px;
+	padding-right:3px;
+	text-decoration:none;
+	text-align:left;
+}
+
+.noticiadestacadainvestigacion img{
+	width:500px;
+	display:block;
+	margin:auto;
+}
+
+/****************************Tipografía para el cuerpo****************************/
+body { 
+	font: 14px/21px "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif; 
+} 
+
+.contact_form h2, .contact_form label { 
+	font-family: Georgia, Times, "Times New Roman", serif; 
+} 
+
+.form_hint, .required_notification { 
+	font-size: 11px; 
+} 
+
+
+/*****************************************************FORMULARIO*****************************************************/
+
+/*Estilos*/
+.contact_form ul { 
+	width: 750px; 
+	list-style-type: none; 
+	list-style-position: outside; 
+	margin: 0px; 
+	padding: 0px; 
+} 
+
+.contact_form li { 
+	padding: 12px; 
+	border-bottom: 1px solid #eee; 
+	position: relative; 
+} 
+
+.contact_form li:first-child, .contact_form li:last-child { 
+	border-bottom: 1px solid #777; 
+} 
+
+/*Cabecera*/
+.contact_form h2 { 
+	margin: 0; 
+	display: inline; 
+} 
+
+.required_notification { 
+	color: #d45252; 
+	margin: 5px 0 0 0; 
+	display: inline; 
+	float: right; 
+} 
+
+/*Elementos*/
+.contact_form label { 
+	width: 150px; 
+	margin-top: 3px; 
+	display: inline-block; 
+	float: left; 
+	padding: 3px; 
+} 
+
+.contact_form input { 
+	height: 20px; 
+	width: 220px; 
+	padding: 5px 8px; 
+} 
+
+.contact_form textarea { 
+	padding: 8px; width: 300px; 
+} 
+
+.contact_form button { 
+	margin-left: 156px; 
+} 
+
+/*Estilos visuales*/
+.contact_form input, .contact_form textarea { 
+	border: 1px solid #aaa; 
+	box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset; 
+	border-radius: 2px; 
+	padding-right: 30px; 
+	-moz-transition: padding .25s; 
+	-webkit-transition: padding .25s; 
+	-o-transition: padding .25s; 
+	transition: padding .25s; 
+} 
+
+.contact_form input:focus, .contact_form textarea:focus { 
+	background: #fff; 
+	border: 1px solid #555; 
+	box-shadow: 0 0 3px #aaa; 
+	padding-right: 70px; 
+} 
+
+/*Validar para que funcionen los estilos*/
+.contact_form input:required, .contact_form textarea:required { 
+	background: #fff url(images/red_asterisk.png) no-repeat 98% center; 
+}
+ 
+.contact_form input:required:valid, .contact_form textarea:required:valid { 
+	background: #fff url(images/valid.png) no-repeat 98% center; 
+	box-shadow: 0 0 5px #5cd053; 
+	border-color: #28921f; 
+} 
+
+.contact_form input:focus:invalid, .contact_form textarea:focus:invalid { 
+	background: #fff url(images/invalid.png) no-repeat 98% center; 
+	box-shadow: 0 0 5px #d45252; 
+	border-color: #b03535; 
+} 
+
+/*Para los consejos*/
+.form_hint { 
+	background: #d45252; 
+	border-radius: 3px 3px 3px 3px; 
+	color: white; 
+	margin-left: 8px; 
+	padding: 1px 6px; 
+	z-index: 999;
+	position: absolute;
+	display: none; 
+} 
+
+.form_hint::before { 
+	content: "\25C0"; 
+	color: #d45252; 
+	position: absolute; 
+	top: 1px; 
+	left: -6px; 
+}
+
+.contact_form input:focus + .form_hint { 
+	display: inline; 
+} 
+
+.contact_form input:required:valid + .form_hint { 
+	background: #28921f; 
+} 
+
+.contact_form input:required:valid + .form_hint::before { 
+	color: #28921f; 
+} 
+
+/*Estilo del botón*/
+button.submit { 
+	background-color: #68b12f; 
+	background: -webkit-gradient(linear, left top, left bottom, from(#68b12f), to(#50911e)); 
+	background: -webkit-linear-gradient(top, #68b12f, #50911e); 
+	background: -moz-linear-gradient(top, #68b12f, #50911e); 
+	background: -ms-linear-gradient(top, #68b12f, #50911e); 
+	background: -o-linear-gradient(top, #68b12f, #50911e); 
+	background: linear-gradient(top, #68b12f, #50911e); 
+	border: 1px solid #509111; 
+	border-bottom: 1px solid #5b992b; 
+	border-radius: 3px; 
+	-webkit-border-radius: 3px; 
+	-moz-border-radius: 3px; 
+	-ms-border-radius: 3px; 
+	-o-border-radius: 3px; 
+	box-shadow: inset 0 1px 0 0 #9fd574; 
+	-webkit-box-shadow: 0 1px 0 0 #9fd574 inset; 
+	-moz-box-shadow: 0 1px 0 0 #9fd574 inset; 
+	-ms-box-shadow: 0 1px 0 0 #9fd574 inset; 
+	-o-box-shadow: 0 1px 0 0 #9fd574 inset; 
+	color: white; 
+	font-weight: bold; 
+	padding: 6px 20px; 
+	text-align: center; 
+	text-shadow: 0 -1px 0 #396715; 
+} 
+
+button.submit:hover { 
+	opacity: .85; 
+	cursor: pointer; 
+} 
+
+button.submit:active { 
+	border: 1px solid #20911e; 
+	box-shadow: 0 0 10px 5px #356b0b inset; 
+	-webkit-box-shadow: 0 0 10px 5px #356b0b inset; 
+	-moz-box-shadow: 0 0 10px 5px #356b0b inset; 
+	-ms-box-shadow: 0 0 10px 5px #356b0b inset; 
+	-o-box-shadow: 0 0 10px 5px #356b0b inset; 
+}
+
+
+/******************************Opiniones de los usuarios******************************/
+
+.opiniones{
+	height:70px;
+	overflow-y:auto;
+	background:white;
+	border:2px white;
+	border-radius: 6px;
+	margin-left:20px;
+	width:350px;
+}
+
+.opiniones h{
+	color:blue;	
+	font:bold 15px ""; /* Negrita */
+}
+
+.opiniones ul{
+	margin-left:-30px;
+	margin-top:1px;
+}
+
+.opiniones li{
+	margin-bottom:7px;
+	color:#002e49;
+	text-decoration:none;
+	font-size:12px;
+}
+
+/******************************Noticias relacionadas******************************/
+
+.relacionadas{
+	height:110px;
+	overflow-y:auto;
+	background:white;
+	border:2px solid #e9e8e4;
+	border-radius: 6px;
+	
+}
+
+.relacionadas ul{
+	margin-left:-30px;
+	margin-top:1px;
+}
+
+.relacionadas li{
+	margin-bottom:7px;
+	color:#002e49;
+	text-decoration:none;
+	font-size:12px;
+}
+
+.relacionadas a{
+	color:green;
+	font-size:12px;
+}
+
+/*Relacionadas1 es igual pero con menos espacio*/
+.relacionadas1{
+	height:70px;
+	overflow-y:auto;
+	background:white;
+	border:2px solid #e9e8e4;
+	border-radius: 6px;
+}
+
+.relacionadas1 ul{
+	margin-left:-30px;
+	margin-top:1px;
+}
+
+.relacionadas1 li{
+	margin-bottom:7px;
+	color:#002e49;
+	text-decoration:none;
+	font-size:12px;
+}
+
+.relacionadas1 a{
+	color:green;
+	font-size:12px;
+}
+
+/*Relacionadas2 es igual pero con mas espacio que el relacionadas1*/
+.relacionadas2{
+	height:80px;
+	overflow-y:auto;
+	background:white;
+	border:2px solid #e9e8e4;
+	border-radius: 6px;
+}
+
+.relacionadas2 ul{
+	margin-left:-30px;
+	margin-top:1px;
+}
+
+.relacionadas2 li{
+	margin-bottom:7px;
+	color:#002e49;
+	text-decoration:none;
+	font-size:12px;
+}
+
+.relacionadas2 a{
+	color:green;
+	font-size:12px;
+}
+
+
+/***********************************Noticias de cada artículo***********************************/
+
+/*SOBREMESA*/
+.noticiasobremesa{
+	width:471px;
+	background-color:#58DC0C;
+	border-radius: 6px;
+	text-align: center;
+	margin-top:3px;
+	padding:0.5em;
+	margin:3px;
+}
+.noticiasobremesa h2{
+	color:red;
+	font-size:14px;
+}
+
+.noticiasobremesa p{
+	color:#0B1EF2;
+}
+
+.noticiasobremesa h1{
+	font-family: Georgia, Times, 'Times New Roman', serif;
+	font-size:18px;
+	color:black;
+	margin-top:2px;
+	padding-left:3px;
+	padding-right:3px;
+	text-decoration:none;
+	text-align:left;
+}
+
+.noticiasobremesa img{
+	width:300px;
+	display:block;
+	margin:auto;
+}
+
+
+/*PORTATILES*/
+
+.noticiasportatiles{
+	width:471px;
+	background-color:#E81111;
+	border-radius: 6px;
+	text-align: center;
+	margin-top:3px;
+	padding:0.5em;
+	margin:3px;
+}
+.noticiasportatiles h2{
+	color:yellow;
+	font-size:14px;
+}
+
+.noticiasportatiles p{
+	color:white;
+}
+
+.noticiasportatiles h1{
+	font-family: Georgia, Times, 'Times New Roman', serif;
+	font-size:18px;
+	color:black;
+	margin-top:2px;
+	padding-left:3px;
+	padding-right:3px;
+	text-decoration:none;
+	text-align:left;
+}
+
+.noticiasportatiles img{
+	width:300px;
+	display:block;
+	margin:auto;
+}
+
+/*PERIFERICOS*/
+
+.noticiasperifericos{
+	width:471px;
+	background-color:#0B1EF2;
+	border-radius: 6px;
+	text-align: center;
+	margin-top:3px;
+	padding:0.5em;
+	margin:3px;
+}
+.noticiasperifericos h2{
+	color:yellow;
+	font-size:14px;
+}
+
+.noticiasperifericos p{
+	color:white;
+}
+
+.noticiasperifericos h1{
+	font-family: Georgia, Times, 'Times New Roman', serif;
+	font-size:18px;
+	color:red;
+	margin-top:2px;
+	padding-left:3px;
+	padding-right:3px;
+	text-decoration:none;
+	text-align:left;
+}
+
+.noticiasperifericos img{
+	width:300px;
+	display:block;
+	margin:auto;
+}
+
+/*INVESTIGACIONES*/
+
+.noticiasinvestigaciones{
+	width:471px;
+	background-color:#F706EB;
+	border-radius: 6px;
+	text-align: center;
+	margin-top:3px;
+	padding:0.5em;
+	margin:3px;
+}
+
+.noticiasinvestigaciones h2{
+	color:yellow;
+	font-size:14px;
+}
+
+.noticiasinvestigaciones p{
+	color:white;
+}
+
+.noticiasinvestigaciones h1{
+	font-family: Georgia, Times, 'Times New Roman', serif;
+	font-size:18px;
+	color:black;
+	margin-top:2px;
+	padding-left:3px;
+	padding-right:3px;
+	text-decoration:none;
+	text-align:left;
+}
+
+.noticiasinvestigaciones img{
+	width:300px;
+	display:block;
+	margin:auto;
+}
+
+/************************************************LOGIN Y REGISTRO************************************************/
+.login{
+    border-color: red;
+    border-style: solid;
+    border-width: 1px 1px 1px;
+    float: right; /* Que este situado a la derecha */
+    height: 200px; /* Tamaño del cuadro rojo a lo alto */
+    margin-right: 55px; /* Margen derecho */
+    margin-top: 8px; /* Margen de arriba */
+    margin-left: 25px; /* Margen izuierdo */
+    padding-left: 20px; /* No hace nada */
+    padding-top: 20px; /* No hace nada */
+    position: relative;
+    width: 320px; /* Tamaño del cuadro rojo a lo ancho */
+    padding: 10px; /* Espacia diagonalmente */
+    background: #CECBD2; /* Color de fondo */
+  }
+
+.registro{
+	border-color: red;
+    border-style: solid;
+    border-width: 1px 1px 1px;
+    float: left; /* Que este situado a la izquierda */
+    height: 500px; /* Tamaño del cuadro rojo a lo alto */
+    margin-right: 5px; /* Margen derecho */
+	margin-left:30px; /* Margen izuierdo */
+    margin-top: 8px; /* Margen de arriba */
+    padding-left: 20px; /* No hace nada */
+    padding-top: 20px; /* No hace nada */
+    position: relative;
+    width: 320px; /* Tamaño del cuadro rojo a lo ancho */
+    padding: 10px; /* Espacia diagonalmente */
+    background: #CECBD2; /* Color de fondo */
+  }
+
+/* La seccion reservada para identificacion.php, para los dos formularios*/
+.cuerpoform{
+    background: #CECBD2;
+    float: left;
+    width: 800px;
+    height: 550px; /* Se sube o baja el pie de página */
+  }
+
+.cuerpoform h2, .cuerpoform label { 
+	font-family: Georgia, Times, "Times New Roman", serif; 
+} 
+
+/********************************************PASAR EL RATON POR ENCIMA********************************************/
+
+.caja {
+position: relative; /*Para poder ubicar la info dentro de la caja*/
+margin: 10px auto;
+}
+
+.caja h{ /* Tenemos un h para indicar la noticia de azul, de esta forma destacarlo*/
+	color:blue;
+}
+
+.caja a{ /* El color de la letra debe ser negro ya que la caja es blanca */
+	color:black;
+}
+
+
+.caja img {
+border:2px solid black;
+}
+
+.info {
+	position: absolute; /*Info sobre la imagen*/
+	top: 5%;
+	left: 10%; /*Desplazamos a partir de la esquina superior izquierda*/
+	zoom: 1;
+	filter: alpha(opacity=0); /*Opacidad Para IE */
+	opacity: 0; /*Inicialmente transparente */
+	padding: 5px;
+	background: white; /* Color de la caja */
+	-moz-transition:all ease .8s; /*Aplicamos una ligera transición*/
+	-webkit-transition:all ease .8s ;
+	transition:all ease .8s;
+}
+
+.caja:hover .info {
+	filter: alpha(opacity=80);
+	opacity: .8; /*Al hacer hover sobre la caja hacemos visible los datos*/
+}
+
+.info a { /* El color de la letra debe ser negro ya que la caja es blanca */
+	color:black;
+}
+
+/************************************************COMENTARIOS************************************************/
+.comentarios{
+	height:110px; /*Tamaño de la caja de texto a lo alto*/
+	background:white;
+	border:2px solid #e9e8e4;
+	border-radius: 6px;
+	margin-left:20px; /* Margen izquierdo */
+	
+}
+
+.comentarios textarea{ /*Le pongo el borde blanco*/
+	border:white;
+	
+}
+
+/************************************************CERRAR SESION************************************************/
+.cerrarsesion {
+	float:right;
+	font-size:14px; /* Tamaño de la letra */
+	border-right:100px;
+	margin-right:250px; /* Margen derecho para que quede centrado */
+}
+
+/************************************************NOTICIAS***********************************************/
+
+.noticiasBD {
+	height:70px; /* Tamaño de la caja en la que se ven los comentarios a lo alto */
+	overflow-y:auto; /* Por si la noticia es mas grande del cuadrado, se crea un scroll */
+	background:white; /* Fondo de la caja blanco */
+	border:2px white; /* Borde de la caja */
+	border-radius: 6px;
+	width:250px; /* Tamaño de la caja en la que se ven los comentarios a lo largo */
+}
+
+.noticiasBD h{
+	color:blue;	/* Para que se vea azul el titulo */
+	font:bold 15px ""; /* Negrita */
+}

@@ -10,7 +10,7 @@
 	if($idnoticia==""){ //Si el id de la noticia esta vacio
 		try{
 			if($_SESSION['login'] == true && $_SESSION['admin'] == 1){
-				$mbd = new PDO("mysql:host=localhost;dbname=db75261260" , "x75261260" , "x75261260");
+				$mbd = new PDO("mysql:host=localhost;dbname=dbxxx" , "xxx" , "xxx");
 				$mbd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
 
 				$insertar = $mbd ->prepare("INSERT INTO Noticias (Titulo, Fecha, Cuerpo) VALUES (:titulonoticia, NOW(), :noticiaBD)");
@@ -39,7 +39,7 @@
 
 		try{
 			//if($_SESSION['login'] == true && $_SESSION['admin'] == 1){ No lo hacemos porque lo tenemos oculto a usuarios normales
-			$mbd = new PDO("mysql:host=localhost;dbname=db75261260" , "x75261260" , "x75261260");
+			$mbd = new PDO("mysql:host=localhost;dbname=dbxxx" , "xxx" , "xxx");
 			$mbd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
 
 			$borrar = $mbd ->prepare("DELETE FROM Noticias WHERE IdNoticia = :idnoticia");

@@ -5,7 +5,7 @@
 	$id = $_POST['borrarnoticias'];
 
 	try{
-		$mbd = new PDO("mysql:host=localhost;dbname=db75261260" , "x75261260" , "x75261260");
+		$mbd = new PDO("mysql:host=localhost;dbname=dbxxx" , "xxx" , "xxx");
 		$mbd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
 
 		$borrar = $mbd ->prepare("DELETE FROM Noticias WHERE IdNoticia = :id");

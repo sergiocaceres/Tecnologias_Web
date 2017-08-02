@@ -8,7 +8,7 @@ if(isset($_POST['Usuario'])) {
 	$Clave = $_POST['Clave'];
 
 	try {
-		$mbd = new PDO("mysql:host=localhost;dbname=db75261260" , "x75261260" , "x75261260");
+		$mbd = new PDO("mysql:host=localhost;dbname=dbxxx" , "xxx" , "xxx");
 		$mbd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);  //Errores
 
 		$sentencia = $mbd ->prepare("SELECT * FROM Usuarios WHERE Usuario = :Usuario AND Clave = :Clave");
